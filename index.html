@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./img/Logo.svg" type="image/x-icon" />
+
+    <title>Niño Lucero</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!------------------------- Header Section ---------------------------->
+
+    <div id="header">
+      <nav>
+        <nav-brand id="nav-brand">
+          <a href="#header" id="logo"><i class="fa-solid fa-code"></i> Nin</a>
+        </nav-brand>
+        <ul id="sidemenu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark menu-icons" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars menu-icons" onclick="openMenu()"></i>
+      </nav>
+      <div class="container">
+        <div class="header-text">
+          <p><span class="multiple-text"></span></p>
+          <h1>Hi, I'm <span>Niño</span> From the Philippines</h1>
+          <p>In the midst of chaos, there is also opportunity - Sun Tzu</p>
+          <div class="social-media">
+            <a href="https://github.com/nin-shift-del" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="./resume/Resume_Lucero_Nino.pdf" download
+              ><i class="fa-solid fa-file-pdf"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------ End of Header Section ------------------------>
+    <!------------------------ About Section -------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./img/Nin.jpg" id="nin-image" />
+          </div>
+          <div class="about-col-2">
+            <h1 id="sub-title">About me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus, eaque! Ipsam perspiciatis mollitia blanditiis, eveniet
+              eum commodi dolorum necessitatibus doloribus ea, repudiandae nulla
+              illo! Mollitia, voluptates? Sint cum aliquam laborum adipisci?
+              Accusantium beatae quos exercitationem provident perferendis rem
+              ex dolor laborum quam modi vel et, fugiat voluptatem dolore eum
+              quasi?
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!--skills-->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />
+                  HTML <br />
+                  CSS <br />
+                  JavaScript <br />
+                  Bootstrap <br />
+                  PHP <br />
+                </li>
+                <li>
+                  <span>Graphic Design</span> <br />
+                  Photo / Video Editing <br />
+                  Social Media <br />
+                </li>
+                <li>
+                  <span>Computer and Administration: </span><br />Proficiencies
+                  include Microsoft Office (Word, Excel, & PowerPoint), Internet
+                  search, Data Entry/Encoding, and Applications.
+                </li>
+                <li><span></span><br /></li>
+              </ul>
+            </div>
+            <!--experience-->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>FEBUARY 2023 - JUNE 2023</span><br />GENERAL SANTOS CITY
+                  POST OFFICE - Administrative Encoding
+                </li>
+                <li>
+                  <span>2021 - 2023</span><br />
+                  STI College General Santos Inc. - Capstone Project
+                </li>
+                <li>
+                  <span>2020 - Present </span>
+                  <br />
+                  Freelancing - Graphic Design
+                </li>
+              </ul>
+            </div>
+            <!--education-->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>STI COLLEGE - GEN. SANTOS INC.</span><br />
+                  2019 - 2023 <br />
+                  Bachelor of Science in Information Technology
+                </li>
+                <li>
+                  <span>NEW ERA UNIVERSITY GSC - BRANCH </span> <br />
+                  2013 - 2019 <br />
+                  Junior / Senior High School Diploma
+                </li>
+                <li>
+                  <span>Shalom Crest Wizard Academy </span> <br />
+                  2008 - 2013 <br />
+                  Gradeschool
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------ End of About Section ------------------------->
+
+    <!------------------------ Services Section -------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 id="sub-title">My Services</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              iusto quibusdam nulla rerum quod obcaecati ducimus! Magnam ut quae
+              quidem.
+            </p>
+            <a href="#services" data-modal-target="#modal"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              modi deserunt sed nostrum facilis atque asperiores fugiat
+              similique non dolore!
+            </p>
+            <a href="#services" data-modal-target="#modal"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+          <div>
+            <i class="fa-solid fa-keyboard"></i>
+            <h2>Administrative Assistance</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+              ratione odio, tempora dolorem suscipit provident ipsam ipsum
+              assumenda rem rerum?
+            </p>
+            <a href="#services" data-modal-target="#modal"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------- End of Service Section---------------------------------------->
+    <!-------------------------------- Portfolio-------------------------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 id="sub-title">Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./img/web-development.jpeg" style="height: 300px" />
+            <div class="layer">
+              <h3>Web Development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                illo.
+              </p>
+              <a href="#portfolio" data-modal-target="#modal"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./img/graphic.jpg" style="height: 300px" />
+            <div class="layer">
+              <h3>Graphic Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                illo.
+              </p>
+              <a href="#portfolio" data-modal-target="#modal"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./img/assistant.jpeg" style="height: 300px" />
+            <div class="layer">
+              <h3>Administrative Assistant</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                illo.
+              </p>
+              <a href="#portfolio" data-modal-target="#modal"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#portfolio" data-modal-target="#modal" class="btn-see-more"
+          >See More</a
+        >
+      </div>
+    </div>
+    <!-------------------------------- End of Portfolio------------------------------------------->
+    <!-------------------------------- Contact --------------------------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 id="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> ninthegreat322@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +639772127875</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a
+              href="./resume/Resume_Lucero_Nino.pdf"
+              download
+              class="btn-see-more btn-resume"
+              >Download Resume</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form>
+              <input
+                data-modal-target="#modal"
+                type="text"
+                id="name"
+                placeholder="Full Name"
+              />
+              <input
+                data-modal-target="#modal"
+                type="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <input
+                data-modal-target="#modal"
+                type="phone"
+                id="phone"
+                placeholder="Phone No."
+              />
+              <textarea
+                data-modal-target="#modal"
+                name=""
+                id=""
+                cols="5"
+                rows="8"
+                placeholder="Message"
+              ></textarea>
+              <!-------------------------------- Pop-up Modal ------------------------------------------------>
+            </form>
+            <button data-modal-target="#modal" class="btn-see-more btn-resume">
+              Submit
+            </button>
+            <div class="modal" id="modal">
+              <div class="modal-header">
+                <div class="title">This Feature coming soon!</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  This feature is currently unavailable. We apologize for the
+                  inconvenience. For assistance, please contact us via:
+                </p>
+                <ul class="contact-list">
+                  <li>Email: ninthegreat322@gmail.com</li>
+                  <li>Phone No. : +639772127578</li>
+                </ul>
+              </div>
+            </div>
+            <div id="overlay"></div>
+
+            <div id="myModal" class="intromodal">
+              <div class="modal-content">
+                <h2>Disclaimer</h2>
+                <p>
+                  Some features on this website are currently under development.
+                  <br />
+                  We apologize for any inconvenience caused.
+                </p>
+                <button id="closeBtn">I Understand</button>
+              </div>
+            </div>
+            <div id="overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-------------------------Footer-------------------------------------------->
+      <div class="copyright">
+        Copyright <i class="fa-regular fa-copyright"></i> Niño P. Lucero
+      </div>
+    </div>
+    <!------------------------Typed.js Script------------------------>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!------------------------Linked custom Scripts.js------------------------>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
