@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="icon" href="./img/Logo.svg" type="image/x-icon" />
-
+    <link rel="icon" href="./img/Logo.png" type="image/x-icon" />
     <title>Niño Lucero</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
@@ -17,31 +21,380 @@
     />
   </head>
   <body>
-    <!------------------------- Header Section ---------------------------->
+    <!-- Navigation Bar -->
+    <header>
+      <a href="#" class="logo"><span>Nin</span>ShiftDel</a>
+      <ul class="nav-list" id="#nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
 
-    <div id="header">
-      <nav>
-        <nav-brand id="nav-brand">
-          <a href="#header" id="logo"><i class="fa-solid fa-code"></i> Nin</a>
-        </nav-brand>
-        <ul id="sidemenu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fa-solid fa-xmark menu-icons" onclick="closeMenu()"></i>
+      <div class="fa-solid fa-bars" id="menu-icon"></div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Hi, I'm <span>Niño</span> From the Philippines</h1>
+        <p><span class="multiple-text"></span></p>
+        <p>
+          “In the midst of chaos, there is also opportunity” - Sun Tzu, The Art
+          of War
+        </p>
+        <div class="button">
+          <a href="./Resume/Resume_Lucero_Nino.pdf" download class="btn"
+            >Download Resume <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="#portfolio" class="btn2"
+            ><span><i class="fa-solid fa-magnifying-glass"></i></span> Explore
+            my Portfolio</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./img/half-body.png" alt="My Picture" />
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4><span>Junior Web Developer</span>.</h4>
+        <p>
+          My journey into the world of web development began with an interest of
+          curiosity that soon turned into a full-blown passion. With an
+          excellent basis in HTML, CSS, and JavaScript, I've been creating
+          websites for projects that might help me improve my abilities. I like
+          making concepts into fully working, user-friendly websites that
+          provide smooth interactions. I am constantly learning and researching
+          new technologies. <br />
+        </p>
+        <h4><span>Graphic Designer</span>.</h4>
+        <p>
+          Graphic design is not just a profession for me. From crafting stunning
+          logos and illustrations to designing eye-catching marketing materials,
+          I revel in the power of visual storytelling. My creativity knows no
+          bounds, and I'm constantly seeking ways to push the boundaries of
+          design to create captivating visuals that resonate with audiences.
+        </p>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="main-text">
+        <p><span>Technical</span> & Professional</p>
+        <h2>My <span>Skills</span></h2>
+      </div>
+      <div class="skill-main">
+        <div class="skill-left">
+          <h2><span>Technical</span> Skills</h2>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>HTML</p>
+              <p>70%</p>
+            </div>
+            <div class="bar">
+              <span class="html"></span>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>CSS</p>
+              <p>50%</p>
+            </div>
+            <div class="bar">
+              <span class="css"></span>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>JavaScript</p>
+              <p>30%</p>
+            </div>
+            <div class="bar">
+              <span class="javascript"></span>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>Canva</p>
+              <p>80%</p>
+            </div>
+            <div class="bar">
+              <span class="canva"></span>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>Bootstrap</p>
+              <p>30%</p>
+            </div>
+            <div class="bar">
+              <span class="bootstrap"></span>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>Adobe Photoshop</p>
+              <p>50%</p>
+            </div>
+            <div class="bar">
+              <span class="ps"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-right">
+          <h2>Professional <span>Skills</span></h2>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>Teamwork</p>
+              <p>90%</p>
+            </div>
+            <div class="bar">
+              <span class="teamwork"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>Emotional intelligence</p>
+              <p>80%</p>
+            </div>
+            <div class="bar">
+              <span class="emotional-intelligence"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>Communication</p>
+              <p>90%</p>
+            </div>
+            <div class="bar">
+              <span class="communication"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>Openness to learning</p>
+              <p>100%</p>
+            </div>
+            <div class="bar">
+              <span class="open-to-learn"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>Problem-solving</p>
+              <p>60%</p>
+            </div>
+            <div class="bar">
+              <span class="problemSolving"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>Flexibility</p>
+              <p>60%</p>
+            </div>
+            <div class="bar">
+              <span class="flexibilty"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="service" id="service">
+      <div class="main-text">
+        <p><span>What</span> Could I Offer You?</p>
+        <h2>My <span>Services</span></h2>
+      </div>
+
+      <div class="services-content">
+        <div class="box">
+          <div class="s-icons">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3><span>Web</span> Development</h3>
+          <p>
+            As a Junior Web Developer what can I offer are this simple but
+            creative website with your own personal design/brand depending on
+            your style. <br /><br />Blogging Platform, E-commerce Store,
+            Personal Website, and etc.
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="s-icons">
+            <i class="fa-solid fa-crop-simple"></i>
+          </div>
+          <h3><span>Graphic</span> Designing</h3>
+          <p>
+            As a Freelancer Graphic Designer what can I offer are theme related
+            designs on events or other related topics you desire.
+            <br />
+            <br />Inforgraphics, Photo / Video Editing Social Media Content
+            (Posts, Reels, Stories, & etc), Logo, Flyers, Posters, & Tshirt
+            Design.
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="s-icons">
+            <i class="fa-regular fa-paste"></i>
+          </div>
+          <h3><span>Virutal</span> Assistance</h3>
+          <p>
+            As a Virtual Assistant what can i offer are simple tasks that
+            provides remote assistance, organizational, and support services to
+            clients, businesses. <br /><br />Data Entry, Image to Document,
+            Research and Data Analysis, & Social Media & Content Management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="main-text">
+        <p>Project Outputs</p>
+        <h2 id="project">My <span>Portfolio</span></h2>
+      </div>
+
+      <div class="porfolio-tab">
+        <ul class="tabs">
+          <li data-tab-target="#infographics" class="active tab">
+            Inforgraphics
+          </li>
+          <li data-tab-target="#logo" class="tab">Logo</li>
+          <li data-tab-target="#tshirt" class="tab">Tshirt Design</li>
+          <li data-tab-target="#website" class="tab">Wesbite Design</li>
         </ul>
-        <i class="fa-solid fa-bars menu-icons" onclick="openMenu()"></i>
-      </nav>
-      <div class="container">
-        <div class="header-text">
-          <p><span class="multiple-text"></span></p>
-          <h1>Hi, I'm <span>Niño</span> From the Philippines</h1>
-          <p>In the midst of chaos, there is also opportunity - Sun Tzu</p>
-          <div class="social-media">
-            <a href="https://github.com/nin-shift-del" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
+      </div>
+
+      <div id="infographics" class="active" data-tab-content>
+        <div class="row">
+          <img
+            src="./Project Examples/Infographics/ESTROGEN.png"
+            class="image"
+          />
+        </div>
+        <div class="row">
+          <img
+            src="./Project Examples/Infographics/Klinefelter's Syndrome.png"
+            class="image"
+          />
+        </div>
+        <div class="row">
+          <img
+            src="./Project Examples/Infographics/Labratory Work-up and Diagnosis.png"
+            class="image"
+          />
+        </div>
+        <div class="row">
+          <img
+            src="./Project Examples/Infographics/Rizal Green Infographic.png"
+            class="image"
+          />
+        </div>
+        <div class="row">
+          <img
+            src="./Project Examples/Infographics/Storage Infographics.png"
+            class="image"
+          />
+        </div>
+        <div class="row">
+          <img
+            src="./Project Examples/Infographics/Futuristic Informational Infographic.png"
+            class="image"
+          />
+        </div>
+        <div class="row">
+          <img
+            src="./Project Examples/Infographics/Histopathology Infographic.png"
+            class="image"
+          />
+        </div>
+        <div class="row">
+          <img
+            src="./Project Examples/Infographics/Renal Function Health Infographic.png"
+            class="image"
+          />
+        </div>
+      </div>
+      <div id="logo" data-tab-content>
+        <div class="row">
+          <img src="./Project Examples/Logo/Haider.jpg" class="image" />
+        </div>
+      </div>
+      <div id="tshirt" data-tab-content>
+        <div class="row">
+          <img
+            src="./Project Examples/Tshirt/wheyan-tshirt.png"
+            class="image"
+          />
+        </div>
+        <div class="row">
+          <img src="./Project Examples/Tshirt/bing.png" class="image" />
+        </div>
+        <div class="row">
+          <img src="./Project Examples/Tshirt/bing2.png" class="image" />
+        </div>
+        <div class="row">
+          <img src="./Project Examples/Tshirt/bing 3.png" class="image" />
+        </div>
+        <div class="row">
+          <img src="./Project Examples/Tshirt/bing4.png" class="image" />
+        </div>
+      </div>
+      <div id="website" data-tab-content>
+        <div class="row">
+          <img
+            src="./Project Examples/Website Mockup Designs/appliances website.png"
+            class="image"
+          />
+        </div>
+        <div class="row">
+          <img
+            src="./Project Examples/Website Mockup Designs/SavvyShopper.png"
+            class="image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="main-text">
+        <p><span>Keep</span> in touch</p>
+        <h2>My <span>Contacts</span></h2>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-left">
+          <div class="title">
+            <h1>Contact <span>Me</span></h1>
+            <h3>If You Have Any Projects In Mind.</h3>
+            <p>
+              Let's Connect! As a junior web developer, graphic designer, and
+              virtual assistant, I'm ready to collaborate and bring your
+              projects to life. Feel free to reach out and discuss how we can
+              work together!
+            </p>
+          </div>
+
+          <div class="socials">
             <a href="https://web.facebook.com/Ninoftheomfg" target="_blank"
               ><i class="fa-brands fa-facebook"></i
             ></a>
@@ -55,321 +408,69 @@
               target="_blank"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
-            <a href="./resume/Resume_Lucero_Nino.pdf" download
-              ><i class="fa-solid fa-file-pdf"></i
+            <a href="https://github.com/nin-shift-del" target="_blank"
+              ><i class="fa-brands fa-github"></i
             ></a>
           </div>
-        </div>
-      </div>
-    </div>
-    <!------------------------ End of Header Section ------------------------>
-    <!------------------------ About Section -------------------------------->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="./img/Nin.jpg" id="nin-image" />
-          </div>
-          <div class="about-col-2">
-            <h1 id="sub-title">About me</h1>
-            <p>
-              As a student of Bachelor of Science in Information Technology, I
-              want to utilize my experience in Information Technology and
-              identify areas for improvement and develop skills for future
-              projects, and also to have a positive attitude and be motivated to
-              learn new knowledge and skills to further my knowledge and career
-            </p>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <!--skills-->
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>Web Development</span><br />
-                  HTML <br />
-                  CSS <br />
-                  JavaScript <br />
-                  Bootstrap <br />
-                  PHP <br />
-                </li>
-                <li>
-                  <span>Graphic Design</span> <br />
-                  Photo / Video Editing <br />
-                  Social Media Content<br />
-                  Inforgraphics<br />
-                  Logo<br />
-                </li>
-                <li>
-                  <span>Computer and Administration: </span><br />Proficiencies
-                  include Microsoft Office (Word, Excel, & PowerPoint), Internet
-                  search, Data Entry/Encoding, and Applications.
-                </li>
-                <li><span></span><br /></li>
-              </ul>
-            </div>
-            <!--experience-->
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>FEBUARY 2023 - JUNE 2023</span><br />GENERAL SANTOS CITY
-                  POST OFFICE - Administrative Encoding
-                </li>
-                <li>
-                  <span>2021 - 2023</span><br />
-                  STI College General Santos Inc. - Capstone Project
-                </li>
-                <li>
-                  <span>2019 - Present </span>
-                  <br />
-                  Freelancing - Graphic Design
-                </li>
-              </ul>
-            </div>
-            <!--education-->
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>STI COLLEGE - GEN. SANTOS INC.</span><br />
-                  2019 - 2023 <br />
-                  Bachelor of Science in Information Technology
-                </li>
-                <li>
-                  <span>NEW ERA UNIVERSITY GSC - BRANCH </span> <br />
-                  2013 - 2019 <br />
-                  Junior / Senior High School Diploma
-                </li>
-                <li>
-                  <span>Shalom Crest Wizard Academy </span> <br />
-                  2008 - 2013 <br />
-                  Gradeschool
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!------------------------ End of About Section ------------------------->
-
-    <!------------------------ Services Section -------------------------------->
-    <div id="services">
-      <div class="container">
-        <h1 id="sub-title">My Services</h1>
-        <div class="service-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
-            <p>
-              As a Junior Web Developer what can I offer are this simple but
-              creative website with your own personal design/brand depending on
-              your style. <br />
-              <br />Blogging Platform, E-commerce Store, Personal Website, and
-              etc.
-            </p>
-            <a href="#services" data-modal-target="#modal"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div>
-            <i class="fa-solid fa-crop-simple"></i>
-            <h2>Graphic Design</h2>
-            <p>
-              As a Freelancer Graphic Designer what can I offer are theme
-              related designs on events or other related topics you desire.
-              <br />
-              <br />
-              Inforgraphics, Photo / Video Editing Social Media Content (such as
-              Posts, Reels, Stories, & etc), Logo, Flyers, Posters, & Tshirt
-              Design.
-            </p>
-            <a href="#services" data-modal-target="#modal"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div>
-            <i class="fa-solid fa-keyboard"></i>
-            <h2>Virtual Assistance</h2>
-            <p>
-              As a Virtual Assistant what can i offer are simple tasks that
-              provides remote administrative, organizational, and support
-              services to clients or businesses. <br /><br />
-              Data Entry, Research and Data Analysis, & Social Media & Content
-              Management
-            </p>
-            <a href="#services" data-modal-target="#modal"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-------------------------- End of Service Section---------------------------------------->
-    <!-------------------------------- Portfolio-------------------------------------------------->
-    <div id="portfolio">
-      <div class="container">
-        <h1 id="sub-title">Portfolio</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="./img/web-development.jpeg" style="height: 300px" />
-            <div class="layer">
-              <h3>Web Development</h3>
-              <p>
-                Here are some sample works of my Junior Web Developer career
-              </p>
-              <a href="#portfolio" data-modal-target="#modal"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="./img/graphic.jpg" style="height: 300px" />
-            <div class="layer">
-              <h3>Graphic Design</h3>
-              <p>
-                Here are some sample works of my Freelance Graphic Designer
-                career
-              </p>
-              <a href="#portfolio" data-modal-target="#modal"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="./img/assistant.jpeg" style="height: 300px" />
-            <div class="layer">
-              <h3>Virtual Assistant</h3>
-              <p>Here are some sample works of my Virtual Assistant career</p>
-              <a href="#portfolio" data-modal-target="#modal"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <a href="#portfolio" data-modal-target="#modal" class="btn-see-more"
-          >See More</a
-        >
-      </div>
-    </div>
-    <!-------------------------------- End of Portfolio------------------------------------------->
-    <!-------------------------------- Contact --------------------------------------------------->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 id="sub-title">Contact me</h1>
-            <p>
-              <i class="fa-solid fa-paper-plane"></i> ninthegreat322@gmail.com
-            </p>
-            <p><i class="fa-solid fa-phone"></i> +639772127875</p>
-            <div class="social-icons">
-              <a href="https://github.com/nin-shift-del" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://web.facebook.com/Ninoftheomfg" target="_blank"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a
-                href="https://instagram.com/notyourordinarynin?igshid=MzNlNGNkZWQ4Mg%3D%3D"
-                target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/ni%C3%B1o-lucero-820692242/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </div>
+          <p><i class="fa-brands fa-google"></i> ninthegreat322@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +63 977 212 7875</p>
+          <p><i class="fa-brands fa-discord"></i> Mashiro_#4071</p>
+          <div class="button-contact">
             <a
               href="./resume/Resume_Lucero_Nino.pdf"
               download
-              class="btn-see-more btn-resume"
-              >Download Resume</a
-            >
-          </div>
-
-          <div class="contact-right">
-            <form>
-              <input
-                data-modal-target="#modal"
-                type="text"
-                id="name"
-                placeholder="Full Name"
-              />
-              <input
-                data-modal-target="#modal"
-                type="email"
-                id="email"
-                placeholder="Email Address"
-              />
-              <input
-                data-modal-target="#modal"
-                type="phone"
-                id="phone"
-                placeholder="Phone No."
-              />
-              <textarea
-                data-modal-target="#modal"
-                name=""
-                id=""
-                cols="5"
-                rows="8"
-                placeholder="Message"
-              ></textarea>
-              <!-------------------------------- Pop-up Modal ------------------------------------------------>
-            </form>
-            <button data-modal-target="#modal" class="btn-see-more btn-resume">
-              Submit
-            </button>
-            <div class="modal" id="modal">
-              <div class="modal-header">
-                <div class="title">This Feature coming soon!</div>
-                <button data-close-button class="close-button">&times;</button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  This feature is currently unavailable. I apologize for the
-                  inconvenience. For assistance, please contact me via:
-                </p>
-                <ul class="contact-list">
-                  <li>Email: ninthegreat322@gmail.com</li>
-                  <li>Phone No. : +639772127578</li>
-                </ul>
-              </div>
-            </div>
-            <div id="overlay"></div>
-
-            <div id="myModal" class="intromodal">
-              <div class="modal-content">
-                <h2>Disclaimer</h2>
-                <p>
-                  Some features on this website are currently under development.
-                  <br />
-                  We apologize for any inconvenience caused.
-                </p>
-                <button id="closeBtn">I Understand</button>
-              </div>
-            </div>
-            <div id="overlay"></div>
+              class="btn-contact"
+              >Download Resume <i class="fa-solid fa-arrow-down"></i>
+            </a>
           </div>
         </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <label>Name</label>
+            <input type="text" name="Name" placeholder="Enter Name" required />
+            <label>Email</label>
+            <input
+              type="email"
+              name="Email"
+              placeholder="Enter Email Address"
+              required
+            />
+            <label>Message</label>
+            <textarea
+              name="Message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Enter Message"
+            ></textarea>
+            <button type="submit" class="submit">Submit</button>
+          </form>
+          <span id="message"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer-text">
+        <h1>
+          <i class="fa-regular fa-copyright"></i> 2023 Niño Lucero All rights
+          reserved
+        </h1>
       </div>
 
-      <!-------------------------Footer-------------------------------------------->
-      <div class="copyright">
-        Copyright <i class="fa-regular fa-copyright"></i> Niño P. Lucero
+      <div class="top">
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
       </div>
-    </div>
-    <!------------------------Typed.js Script------------------------>
+    </section>
+    <!-- Demo Area -->
+
+    <!-- Typing JS -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!------------------------Linked custom Scripts.js------------------------>
-    <script src="./scripts/scripts.js"></script>
+    <!-- Custom JS -->
+    <script src="./JS/script.js"></script>
+    <!-- Boxicon JS -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
